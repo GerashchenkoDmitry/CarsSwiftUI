@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF15B9AC2681EE6200906917 /* CarsSwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF15B9AA2681EE6200906917 /* CarsSwiftUI.xcdatamodeld */; };
+		DF15B9B02681EEB700906917 /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF15B9AE2681EEB700906917 /* Car+CoreDataClass.swift */; };
+		DF15B9B12681EEB700906917 /* Car+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF15B9AF2681EEB700906917 /* Car+CoreDataProperties.swift */; };
 		DF3AF7EF26761E4E003EC665 /* CarsSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3AF7EE26761E4E003EC665 /* CarsSwiftUIApp.swift */; };
 		DF3AF7F126761E4E003EC665 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3AF7F026761E4E003EC665 /* ContentView.swift */; };
 		DF3AF7F326761E51003EC665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF3AF7F226761E51003EC665 /* Assets.xcassets */; };
 		DF3AF7F626761E51003EC665 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF3AF7F526761E51003EC665 /* Preview Assets.xcassets */; };
 		DF3AF7F826761E51003EC665 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3AF7F726761E51003EC665 /* Persistence.swift */; };
-		DF3AF7FB26761E51003EC665 /* CarsSwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF3AF7F926761E51003EC665 /* CarsSwiftUI.xcdatamodeld */; };
+		DF3AF809267860B1003EC665 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3AF808267860B1003EC665 /* DetailView.swift */; };
+		DF3AF80F2678AD1C003EC665 /* AddCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3AF80E2678AD1B003EC665 /* AddCar.swift */; };
+		DF3AFEA0267A190A0019838B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3AFE9F267A190A0019838B /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF15B9AB2681EE6200906917 /* CarsSwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CarsSwiftUI.xcdatamodel; sourceTree = "<group>"; };
+		DF15B9AE2681EEB700906917 /* Car+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		DF15B9AF2681EEB700906917 /* Car+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		DF3AF7EB26761E4E003EC665 /* CarsSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarsSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF3AF7EE26761E4E003EC665 /* CarsSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsSwiftUIApp.swift; sourceTree = "<group>"; };
 		DF3AF7F026761E4E003EC665 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF3AF7F226761E51003EC665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF3AF7F526761E51003EC665 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF3AF7F726761E51003EC665 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		DF3AF7FA26761E51003EC665 /* CarsSwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CarsSwiftUI.xcdatamodel; sourceTree = "<group>"; };
 		DF3AF7FC26761E51003EC665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF3AF808267860B1003EC665 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		DF3AF80E2678AD1B003EC665 /* AddCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCar.swift; sourceTree = "<group>"; };
+		DF3AFE9F267A190A0019838B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +66,17 @@
 		DF3AF7ED26761E4E003EC665 /* CarsSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				DF15B9AE2681EEB700906917 /* Car+CoreDataClass.swift */,
+				DF15B9AF2681EEB700906917 /* Car+CoreDataProperties.swift */,
 				DF3AF7EE26761E4E003EC665 /* CarsSwiftUIApp.swift */,
+				DF3AF808267860B1003EC665 /* DetailView.swift */,
 				DF3AF7F026761E4E003EC665 /* ContentView.swift */,
+				DF3AF80E2678AD1B003EC665 /* AddCar.swift */,
+				DF3AFE9F267A190A0019838B /* ImagePicker.swift */,
 				DF3AF7F226761E51003EC665 /* Assets.xcassets */,
 				DF3AF7F726761E51003EC665 /* Persistence.swift */,
+				DF15B9AA2681EE6200906917 /* CarsSwiftUI.xcdatamodeld */,
 				DF3AF7FC26761E51003EC665 /* Info.plist */,
-				DF3AF7F926761E51003EC665 /* CarsSwiftUI.xcdatamodeld */,
 				DF3AF7F426761E51003EC665 /* Preview Content */,
 			);
 			path = CarsSwiftUI;
@@ -116,6 +131,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"en-GB",
 			);
 			mainGroup = DF3AF7E226761E4E003EC665;
 			productRefGroup = DF3AF7EC26761E4E003EC665 /* Products */;
@@ -144,9 +160,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF3AF7FB26761E51003EC665 /* CarsSwiftUI.xcdatamodeld in Sources */,
+				DF3AF80F2678AD1C003EC665 /* AddCar.swift in Sources */,
+				DF15B9AC2681EE6200906917 /* CarsSwiftUI.xcdatamodeld in Sources */,
 				DF3AF7F826761E51003EC665 /* Persistence.swift in Sources */,
 				DF3AF7F126761E4E003EC665 /* ContentView.swift in Sources */,
+				DF15B9B02681EEB700906917 /* Car+CoreDataClass.swift in Sources */,
+				DF3AF809267860B1003EC665 /* DetailView.swift in Sources */,
+				DF3AFEA0267A190A0019838B /* ImagePicker.swift in Sources */,
+				DF15B9B12681EEB700906917 /* Car+CoreDataProperties.swift in Sources */,
 				DF3AF7EF26761E4E003EC665 /* CarsSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,12 +359,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		DF3AF7F926761E51003EC665 /* CarsSwiftUI.xcdatamodeld */ = {
+		DF15B9AA2681EE6200906917 /* CarsSwiftUI.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				DF3AF7FA26761E51003EC665 /* CarsSwiftUI.xcdatamodel */,
+				DF15B9AB2681EE6200906917 /* CarsSwiftUI.xcdatamodel */,
 			);
-			currentVersion = DF3AF7FA26761E51003EC665 /* CarsSwiftUI.xcdatamodel */;
+			currentVersion = DF15B9AB2681EE6200906917 /* CarsSwiftUI.xcdatamodel */;
 			path = CarsSwiftUI.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
