@@ -24,9 +24,10 @@ struct ContentView: View {
         ForEach(cars, id: \.id) { car in
           NavigationLink(destination: DetailView(car: car)) {
             HStack {
-              Image(systemName: "car")
-                .font(.system(size: 60))
-//                .frame(maxWidth: 160, maxHeight: 90)
+              Image(uiImage: UIImage(data: car.carImage!) ?? UIImage(systemName: "car.circle")!)
+                .resizable()
+                .scaledToFit()
+                .frame(maxWidth: 120, maxHeight: 90)
 
               VStack(alignment: .leading) {
                 Text("\(car.manufacturer ?? "Unknown manufaturer")")

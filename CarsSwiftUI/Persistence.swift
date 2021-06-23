@@ -21,6 +21,7 @@ struct PersistenceController {
       newCar.model = "Car model"
       newCar.year = 2000
       newCar.carDescription = "Description about car"
+      newCar.carImage = UIImage(named: "CorollaE70")?.jpegData(compressionQuality: 1.0)
     }
     do {
       try viewContext.save()

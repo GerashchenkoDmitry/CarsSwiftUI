@@ -11,19 +11,20 @@ import CoreData
 
 
 extension Car {
-
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Car> {
-        return NSFetchRequest<Car>(entityName: "Car")
-    }
-
-    @NSManaged public var id: UUID?
-    @NSManaged public var manufacturer: String?
-    @NSManaged public var model: String?
-    @NSManaged public var year: Int16
-    @NSManaged public var carDescription: String?
-
+  
+  @nonobjc public class func fetchRequest() -> NSFetchRequest<Car> {
+    return NSFetchRequest<Car>(entityName: "Car")
+  }
+  
+  @NSManaged public var id: UUID?
+  @NSManaged public var manufacturer: String?
+  @NSManaged public var model: String?
+  @NSManaged public var year: Int16
+  @NSManaged public var carDescription: String?
+  @NSManaged public var carImage: Data?
+  
 }
 
 extension Car : Identifiable {
-
+  
 }

@@ -12,9 +12,9 @@ struct AddCar: View {
   @Environment(\.managedObjectContext) var moc
   @Environment(\.presentationMode) var presentationMode
   
-//  @State private var image: Image?
-//  @State private var showingImagePicker = false
-//  @State private var inputImage: UIImage?
+  @State private var image: Image?
+  @State private var showingImagePicker = false
+  @State private var inputImage: UIImage?
   
   @State private var manufacturer = ""
   @State private var model = ""
@@ -33,36 +33,36 @@ struct AddCar: View {
     GeometryReader { geometry in
       NavigationView {
         VStack {
-//          ZStack {
-//            Rectangle()
-//              .fill(Color.secondary)
-//              .frame(maxWidth: geometry.size.width, maxHeight: 250)
-//
-//              if image != nil {
-//                image?
-//                  .resizable()
-//                  .scaledToFit()
-//              } else {
-//                Text("Tap to select a picture")
-//                  .foregroundColor(.white)
-//                  .font(.headline)
-//            }
-////            if image != nil {
-//           //              image!
-//           //                .resizable()
-//           //                .scaledToFit()
-//           //                .onTapGesture { self.showingImagePicker.toggle() }
-//           //            } else {
-//           //              Button(action: { self.showingImagePicker.toggle() }) {
-//           //                Text("Select Image", comment: "Select Image Button")
-//           //                  .accessibility(identifier: "Select Image")
-//           //              }
-//           //
-//           //
-//          }
-//          .onTapGesture {
-//            self.showingImagePicker.toggle()
-//          }
+          ZStack {
+            Rectangle()
+              .fill(Color.secondary)
+              .frame(maxWidth: geometry.size.width, maxHeight: 250)
+
+              if image != nil {
+                image?
+                  .resizable()
+                  .scaledToFit()
+              } else {
+                Text("Tap to select a picture")
+                  .foregroundColor(.white)
+                  .font(.headline)
+            }
+//            if image != nil {
+           //              image!
+           //                .resizable()
+           //                .scaledToFit()
+           //                .onTapGesture { self.showingImagePicker.toggle() }
+           //            } else {
+           //              Button(action: { self.showingImagePicker.toggle() }) {
+           //                Text("Select Image", comment: "Select Image Button")
+           //                  .accessibility(identifier: "Select Image")
+           //              }
+           //
+           //
+          }
+          .onTapGesture {
+            self.showingImagePicker.toggle()
+          }
           
           Form {
             Section {
@@ -83,11 +83,12 @@ struct AddCar: View {
             
             Section {
               Button("Add Car") {
-//                let pickedImage = inputImage?.jpegData(compressionQuality: 1.0)
+                let pickedImage = inputImage?.jpegData(compressionQuality: 1.0)
                 
                 let newCar = Car(context: self.moc)
                 
-//                newCar.carImage = pickedImage
+                newCar.id = UUID()
+                newCar.carImage = pickedImage
                 newCar.manufacturer = manufacturer
                 newCar.model = model
                 newCar.year = Int16(year)
@@ -97,7 +98,7 @@ struct AddCar: View {
                 print(newCar.manufacturer ?? "Unknown manufacturer")
                 print(newCar.model ?? "Unknown model")
                 print(newCar.year)
-//                print("Image is saved")
+                print("Image is saved")
                 
                 presentationMode.wrappedValue.dismiss()
               }
@@ -113,17 +114,17 @@ struct AddCar: View {
           }
         }
         .navigationTitle("New Car")
-//        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-//          ImagePicker(image: self.$inputImage)
-//        }
+        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+          ImagePicker(image: self.$inputImage)
+        }
       }
     }
   }
   
-//  func loadImage() {
-//    guard let inputImage = inputImage else { return }
-//    image = Image(uiImage: inputImage)
-//  }
+  func loadImage() {
+    guard let inputImage = inputImage else { return }
+    image = Image(uiImage: inputImage)
+  }
   
 }
 
